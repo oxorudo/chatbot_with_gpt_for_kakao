@@ -15,8 +15,8 @@ jjinchin = Chatbot(
     model = model.basic,
     system_role = system_role,
     instruction = instruction,
-    user = "호용",
-    assistant = "태경"
+    user = "태경",
+    assistant = "고비"
 )
 
 application = Flask(__name__)
