@@ -1,3 +1,5 @@
+## 교재 튜토리얼 보고 개발한 카카오톡 채널 챗봇
+
 #kakaotalk 
 #chatbot
 #python
