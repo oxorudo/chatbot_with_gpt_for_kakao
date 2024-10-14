@@ -4,8 +4,8 @@ import pytz
 from datetime import datetime, timedelta
 
 class Model: 
-    basic: str = "gpt-3.5-turbo-1106"
-    advanced: str = "gpt-4-1106-preview"
+    basic: str = "gpt-4o"
+    advanced: str = "gpt-4o-mini"
 
 model = Model();    
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"), timeout=30, max_retries=1)
