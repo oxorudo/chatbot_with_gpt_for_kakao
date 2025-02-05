@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import os
 from common import today
 
-mongo_cluster = MongoClient(os.getenv("MONGO_CLUSTER_URI"))
+mongo_cluster = MongoClient()
 mongo_chats_collection = mongo_cluster["jjinchin"]["chats"]
 
 class MemoryManager:

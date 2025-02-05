@@ -46,7 +46,7 @@ def format_response(resp, useCallback=False):
 executor = ThreadPoolExecutor(max_workers=1)
 
 
-# 비동기 호출 개선 전 코드
+# 비동기 호출 개선 완료
 
 
 def async_send_request(chat_gpt, callbackUrl, future):

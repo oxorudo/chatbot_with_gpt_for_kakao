@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import os
 
 #cluster=MongoClient("mongodb+srv://<id>:<password>@cluster0.ov3wpli.mongodb.net/?retryWrites=true&w=majority")
-cluster=MongoClient(os.getenv("MONGO_CLUSTER_URI"))
+cluster=MongoClient()
 db=cluster["jjinchin"]
 collection = db["chats"]
 collection.delete_many({})

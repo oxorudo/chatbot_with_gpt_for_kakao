@@ -2,13 +2,18 @@ import os
 from openai import OpenAI
 import pytz
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class Model: 
-    basic: str = "gpt-4o"
-    advanced: str = "gpt-4o-mini"
+    basic: str = "gpt-4o-mini"
+    advanced: str = "gpt-4o"
+        
+api_key = ''
 
 model = Model();    
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"), timeout=30, max_retries=1)
+client = OpenAI(api_key=api_key, timeout=30, max_retries=1)
         
 def makeup_response(message, finish_reason="ERROR"):
     return {
